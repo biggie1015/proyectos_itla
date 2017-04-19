@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<input id="valor" type="text" name="valor" />
+ 
+<input id="send" type="submit" name="send" value="store" />
+	
+		<script>
+			
+		   if(!window.openDatabase){
+        alert("Local databases not supported!");
+    }
+    else{
+        var db = openDatabase("testDB", "1.0", "testDB", 2 * 1024);
+        db.transaction(function(tx){
+            tx.executeSql("CREATE TABLE IF NOT EXISTS resultados(id INTEGER PRIMARY KEY AUTOINCREMENT, valor TEXT)");
+            tx.executeSql("SELECT * FROM resultados;", [], function(tx, salida){
+                console.log(salida.rows.item);
+                var output = "<table>";
+                for(var i = 0; i < salida.rows.length; i++){
+                    var row = salida.rows.item(i);
+                    output += "<tr><td>ddd" + row['valor'] + "</td></tr>";
+                }
+                output += "</table>";
+                result.innerHTML = output;
+            });
+        });
+ 
+        var valor = document.getElementById("valor");
+        var btnSubmit = document.getElementById("send");
+        var result = document.getElementById("result");
+ 
+        btnSubmit.onclick = function(){
+            db.transaction(function(tx){
+                tx.executeSql("INSERT INTO resultados(valor) VALUES (?)", [valor.value], function(){
+                    result.innerHTML = "Value " + valor.value + " inserted!"
+                    db.transaction(function(transaction){
+                        transaction.executeSql("SELECT * FROM resultados", function(salida){
+                            var output = "<table>";
+                            for(var i = 0; i < salida.length; i++){
+                                output += "<tr><td>ddd" + salida.valor + "</td></tr>";
+                            }
+                            output += "</table>";
+                            result.innerHTML = output;
+                        });
+                    });
+                }, function(tx, e){
+                    console.log(e);
+                    alert("Cannot insert value!" + e);
+                });
+            });
+        }
+    }
+ 
+
+			  
+			   
+		</script>
+</body>
+</html>

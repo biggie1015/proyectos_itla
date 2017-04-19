@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
+        <title>Blank App</title>
+ <link rel="stylesheet" href="bootstrap-3.3.7-dist\css\bootstrap.min.css">
+
+<script src="jquery.js"></script>
+
+</head>
+ 
+<body>
+ 
+<div class="container">
+	
+	<div class="row">
+		
+		<div class="col col-sm-6">
+		<img src="itla.png"  class="img-responsive" alt="Responsive image">
+	
+				<div class="form-group">
+					<input type="text" id="email" name="email" class="form-control input-lg" placeholder="&#128272; Correo" required>
+				</div>
+				
+					<div class="form-group">
+					<input type="password"  id="pass" name="pass" class="form-control input-lg" placeholder="&#128272; contraseña" required>
+				</div>
+				<input type="submit"   class="btn btn-block btn-lg btn btn-success"  id="enviar" value="Inicar Seccion">
+			
+			
+		</div>
+		
+		
+		</div>
+		</div>
+		   
+		<script>
+
+			$(function(){
+				
+			
+	var valor1=$('#email').val(),
+		varlor2=$('#pass').val(),
+		boton=$('#enviar');
+				
+				boton.on('click',function(){
+					
+			
+        var parametros = {
+                "email" : valor1,
+                "pass" : varlor2
+        };
+        $.ajax({
+                data:parametros,
+                url:'http://localhost/pase_lista/DCU/www/index.php',
+                type:'post',
+                success:function (response) {
+                        $(location).attr('href','asd.html');
+                }
+        });
+	});
+			});
+</script>
+       
+        <script type="text/javascript" src="cordova.js"></script>
+    </body>
+</html>

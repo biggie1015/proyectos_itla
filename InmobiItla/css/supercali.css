@@ -1,0 +1,501 @@
+table.grid, table.grid th, table.grid td {
+	border-collapse: collapse;
+	border: 1px solid #000;
+	vertical-align: top;
+	
+}
+table.grid {
+	margin: 20px 0px;
+}
+
+table.grid th, table.grid td {
+	width: 13%;
+}
+
+table.grid th {
+	background: #ffe4b5;
+}
+
+
+
+table.grid th.cal_top {
+	background: #B0E0E6;
+	font-size: 16pt;
+}
+
+table.grid td {
+	background: #FFF;
+}
+
+
+.content {
+    width: 83%;
+    float: right;
+    display: inline-block;
+    height: 100%;
+	overflow: auto;
+}
+
+BODY {
+  	font-family: 'Open Sans';
+	background-color : #efece7;
+	color: #000;
+	margin: 0px;
+
+}
+#mode {
+	background-image: url("/images/icons/add.png");
+	background-position: 5px 5px;
+	background-repeat: no-repeat;
+	border-radius: 36px;
+	padding-left: 40px;
+	float: right;
+	margin-right: 11px;
+	background-color: #00E65C;
+	border: 0px none;
+	color: #FFF;
+	font-weight: bold;
+	margin-bottom: 10px;
+}
+A {
+	color: #369;
+}
+.top_nav {
+	float: left;
+	width: 100%
+}
+.top {
+    background-color: rgba(0, 0, 0, 1);
+    color: #000;
+    width: 15%;
+    display: inline-block;
+    height: 100%;
+    position: fixed;
+    overflow: hidden;
+    z-index: 4
+}
+
+#Menu {
+    color: rgba(255, 255, 255, 1);
+    font-size: 14px;
+    padding: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: rgba(0, 209, 49, 0.47);
+    margin-bottom: 10px;
+}
+.nav {
+	background-color: rgba(255, 255, 255, 0.4);
+	color: #000;
+	padding: 17px;
+	line-height: 30px;
+	border-radius: 4px;
+	margin-bottom: 15px;
+}
+#ViewTitle {
+	font-weight: 300;
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #544;
+	margin-left: 13px;
+	background-color: #fff;
+	padding: 3px;
+	border-radius: 12px 12px 0px 0px !important;
+	width: 137px;
+}
+#navTab {
+    color: #fff !important;
+    width: 100%;
+    padding: 10px;
+    padding-left: 21px;
+    font-size: 12px;
+}
+
+.top a, .nav a, .cal_top a, .bottom a {
+    color: #fff;
+    text-decoration: none;
+}
+#viewd {
+	background-color: rgb(255, 255, 255);
+	width: 255px;
+	border-radius: 50px;
+	/* text-transform: uppercase; */
+	/* height: 12px; */
+	/* margin: 7px; */
+}
+.nav A, .cal_top A {
+	color: #007A2C;
+	padding-left: 12px !important;
+	padding-right: 12px !important;
+}
+.nav A {
+	padding: 2px;
+}
+.nav A.selected {
+	background: rgb(56, 207, 0) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+	border-radius: 17px;
+	padding-left: 12px;
+	padding-right: 12px;
+}
+.bottom {
+	clear: left;
+	background-color : #B0E0E6;
+	color: #000;
+	padding: 5px 10px;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+}
+
+.top h1 {
+	margin: 0em;
+	padding: 0em;
+}
+.content {
+	padding: 10px;
+}
+.content .item {
+	padding: 2px;
+}
+h1 {
+	font-size: 18pt;	
+}
+h2 {
+	font-size: 16pt;	
+}
+h3 {
+	font-size: 14pt;	
+}
+h4 {
+	font-size: 12pt;
+	margin: 0em;
+	padding: 0em;
+}
+input {
+	font-size: 10pt;
+}
+.element {
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+form {
+	margin: 0em;
+	padding: 0em;
+}
+.morning {
+	background: #ffc;
+}
+.noon {
+	background: #fcc;
+}
+.afternoon {
+	background: #cff;
+}
+.evening {
+	background: #ccf;
+}
+.midnight {
+	background: #ccc;
+}
+div#timelayer {
+	position:absolute;
+	visibility:hidden;
+}
+
+form.top_form {
+	margin: 0px;
+	padding: 0px;
+	float: right;
+}
+.time {
+	font-size: 8pt;
+}
+.title {
+	font-size: 10pt;
+	font-weight: bold;
+}
+
+.venue {
+	font-size: 8pt;
+}
+.location {
+	font-size: 8pt;
+}
+.edit {
+	font-size: 8pt;
+}
+
+
+.day ul {
+	margin: 5px;
+	padding: 0px 15px;
+}
+.day_of_month {
+	text-align: right;
+	float: right;
+	font-size: 14pt;
+	font-weight: bold;
+	color:#999;
+}
+
+
+/* Added v0.2.0 */
+.error {
+	background: #fcc;
+}
+td, th {
+	vertical-align: top;
+}
+.sidebar {
+	width: 300px;
+	border: 1px solid #000;
+	background: #fff;
+	padding: 5px;
+	float:right;
+}
+/* Added v0.4.0 */
+
+.day_of_month_s {
+	text-align: right;
+	float: right;
+	color:#999;
+}
+table.grid th.cal_top_s {
+	background: #B0E0E6;
+}
+
+.button {
+	padding: 2px;
+	float: left;
+}
+
+.button div {
+	width:10px;
+	height:10px;
+	border:1px solid #000;
+}
+table.grid td.holder {
+	 vertical-align:top;
+	 border: 0px solid #fff;
+	 padding: 5px;
+}
+/* Added v0.4.1 */
+.cell {
+	height: 29px;
+	border-bottom: 1px dashed #CCC;
+	color: #727272;
+	font-size: 18px;
+	font-weight: 300;
+}
+.cell_top {
+	border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+	padding-top: 0px;
+	height: 29px;
+	font-size: 14px;
+	color: rgba(0, 0, 0, 0.48);
+}
+
+#userPancho {
+	display: inline-block;
+	/* padding-left: 35px; */
+	border-right: 1px solid rgba(0, 0, 0, 0.14);
+	/* padding-right: 35px; */
+	width: 180px;
+	text-align: center;
+}
+.date {
+	position: absolute;
+	z-index: 1;
+	overflow: hidden;
+	margin: 0px;
+	border: 1px solid rgba(0, 0, 0, 0.15);
+	background-color: rgba(255, 255, 255, 0.42);
+	border-radius: 4px;
+}
+#myIframe {
+	height: 530px;
+	width: 582px;
+	border: 0px none;
+}
+.wrap{
+width: 100%;
+clear: both;
+}
+#addeventbox {
+	position: absolute;
+}
+
+#dialog {
+	background-color: rgb(255, 255, 255);
+	z-index: 3;
+}
+#ttitle {
+    font-size: 27px;
+    margin-bottom: -3px;
+    opacity: 0.5;
+    color: rgb(0, 0, 0);
+    font-weight: 100;
+    padding-left: 15px;
+}
+#Tecnic {
+    margin-right: 20px;
+    margin-top: -37px;
+    z-index: 3;
+    position: absolute;
+    right: 0px;
+}
+#linetitle {
+	display: inline-block;
+	color: rgba(0, 0, 0, 0.62);
+	float: right;
+	font-size: 12px;
+	margin-right: 2px;
+	/* text-transform: uppercase; */
+}
+#tecs {
+	width: 143px;
+	float: right;
+	padding: 8px;
+	border-radius: 0px 0px 7px 24px;
+	border-width: 0px 0px 1px 1px;
+	border-style: solid none solid solid;
+	border-color: -moz-use-text-color -moz-use-text-color rgba(0, 0, 0, 0.24) rgba(0, 0, 0, 0.24);
+	-moz-border-top-colors: none;
+	-moz-border-right-colors: none;
+	-moz-border-bottom-colors: none;
+	-moz-border-left-colors: none;
+	border-image: none;
+	z-index: 4;
+	/* margin-top: 0px; */
+}
+
+#title {
+    font-size: 14pt;
+    border-radius: 6px;
+    border: 1px solid rgba(11, 11, 11, 0.24);
+    padding: 4px;
+    width: 97%;
+    margin-bottom: 36px;
+    margin-left: 10px;
+}
+#arrows {
+    display: inline-block;
+    float: right;
+    font-family: Open Sans;
+}
+#dates {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	right: 0px;
+}
+.inner {
+	padding: 0px 2px;
+	font-size: 6pt;
+}
+#DELETE {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    display: inline-block;
+    color: rgba(0, 0, 0, 0.43);
+}
+.frame {
+}
+.endtime {
+    margin-left: 26px;
+}
+.ddate {
+    margin-left: 12px;
+    margin-right: 231px;
+}
+input {
+	font-size: 10pt;
+	border-radius: 5px;
+	border: 1px solid rgba(0, 0, 0, 0.32);
+	padding: 6;
+}
+#yolo {
+text-transform: uppercase;
+font-size: 13px;
+color: rgb(69, 68, 68);
+}
+div.cal_top {
+	background: rgba(176, 224, 230, 0) none repeat scroll 0% 0%;
+	font-weight: 300;
+	font-size: 31px;
+	color: rgba(0, 0, 0, 0.5);
+}
+
+.single_day_frame {
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+	
+}
+/* Added v1.0.0 */
+.time_frame {
+	position:relative;
+	margin: 0px;
+	padding: 0px;
+}
+.timex {
+	width: 80px;	
+}
+
+.day_of_week {
+	height: 1440px;
+	border-left: 1px solid #000;
+	position: absolute;
+}
+#today {
+	background: #ffc;
+}
+.day_of_month a, .day_of_month_s a, .week a {
+	color: #999;
+	text-decoration: none;
+}
+th.cal_top_s a {
+	color: #000;
+	text-decoration: underline;
+}
+table.day {
+	width: 100%;
+	border-collapse: collapse;
+	border: 0px;
+	padding: 0px;
+	margin: 0px;
+}
+table.day th {
+	background: #ffe4b5;
+	border-right: 1px solid #000;
+	border-bottom: 1px solid #000;
+	border-left: 1px solid #000;
+	padding: 5px;
+}
+td.single_day {
+	border-left: 1px solid rgba(0, 0, 0, 0.15)
+}
+.week {
+	clear: right;
+	text-align: right;
+	float: right;
+	font-size: 8pt;
+	font-weight: bold;
+	color:#999;
+}
+.cell_top a {
+	color: #000;
+	text-decoration: underline;
+}
+
+.inner .time, .inner .venue, .inner .location, .inner .edit {
+	font-size: 6pt;
+}
+
+.inner .title {
+	font-size: 8pt;
+}
+.code {
+	font-family: Courier New;
+}
