@@ -1,0 +1,40 @@
+{
+  "estudiantes": [
+    {
+      "id": 1,
+      "nombre": "Ismel de Jesus"
+    
+    },
+    {
+      "id": 2,
+      "nombre": "Jona"
+      
+    },
+    {
+      "id": 3,
+      "nombre": "Ernesto"
+      
+    },
+    {
+      "id": 4,
+      "nombre": "Juan"
+     
+    },
+    {
+      "id": 5,
+      "nombre": "Oedro"
+     
+    },
+    {
+      "id": 6,
+      "nombre": "Forrest Gump"
+      
+    },
+    {
+      "id": 7,
+      "nombre": "Aristides"
+      
+    }
+  ]
+  
+    }
